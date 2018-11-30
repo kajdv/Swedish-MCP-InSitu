@@ -20,9 +20,9 @@ var items = [
     )]
     ,
     ["instructions", "PennController", PennController(
-//        newHtml("instructions form", "TaskInstructionsUnmarked.html") 
-        newHtml("instructions form", "TaskInstructionsV2.html") 
-//        newHtml("instructions form", "TaskInstructionsSpAct.html") 
+        newHtml("instructions form", "TaskInstructionsUnmarked.html")
+//        newHtml("instructions form", "TaskInstructionsV2.html")
+//        newHtml("instructions form", "TaskInstructionsSpAct.html")
 
             .print()
         ,
@@ -31,7 +31,7 @@ var items = [
             .wait()
     )]
     ,
-    ["prepractice", "PennController", PennController(
+ ["prepractice", "PennController", PennController(
         newHtml("prepractice form", "NaturalnessInstructions.html")
             .print()
         ,
@@ -110,9 +110,9 @@ PennController.FeedItems( myTable.filter("ExptType","Practice"),
                     .settings.size(700, 30)
             )               
             .settings.add(25,130,
-             //   newText("stimuli", item.InSitu_Stims)
-                newText("stimuli", item.V2_Stims)
-             //  newText("stimuli", item.SpActAdv_Stims)
+                newText("stimuli", item.InSitu_Stims)
+             //   newText("stimuli", item.V2_Stims)
+             //   newText("stimuli", item.SpActAdv_Stims)
                     .settings.italic()
                     .settings.size(700, 30)
             )
@@ -191,9 +191,9 @@ PennController.FeedItems( myTable.filter("Expt","experiment-first"),
                     .settings.size(700, 30)
             )               
             .settings.add(25,130,
-             //   newText("stimuli", item.InSitu_Stims)
-                newText("stimuli", item.V2_Stims)
-             //  newText("stimuli", item.SpActAdv_Stims)
+               newText("stimuli", item.InSitu_Stims)
+             //   newText("stimuli", item.V2_Stims)
+             //   newText("stimuli", item.SpActAdv_Stims)
                     .settings.italic()
                     .settings.size(700, 30)
             )
@@ -270,9 +270,9 @@ PennController.FeedItems( myTable.filter("Expt","experiment"),
                     .settings.size(700, 30)
             )               
             .settings.add(25,130,
-             //   newText("stimuli", item.InSitu_Stims)
-                newText("stimuli", item.V2_Stims)
-             //  newText("stimuli", item.SpActAdv_Stims)
+               newText("stimuli", item.InSitu_Stims)
+             //   newText("stimuli", item.V2_Stims)
+             //   newText("stimuli", item.SpActAdv_Stims)
                     .settings.italic()
                     .settings.size(700, 30)
             )
@@ -327,3 +327,8 @@ PennController.FeedItems( myTable.filter("Expt","experiment"),
    // .log("SpActAdv_Stims", item.SpActAdv_Stims)           
     .log("source", PennController.GetURLParameter("source")) 
 );
+
+
+
+
+
