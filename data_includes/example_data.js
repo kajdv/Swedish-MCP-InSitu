@@ -20,9 +20,9 @@ var items = [
     )]
     ,
     ["instructions", "PennController", PennController(
-        newHtml("instructions form", "TaskInstructionsUnmarked.html")
-//        newHtml("instructions form", "TaskInstructionsV2.html")
-//        newHtml("instructions form", "TaskInstructionsSpAct.html")
+//        newHtml("instructions form", "TaskInstructionsUnmarked.html") 
+        newHtml("instructions form", "TaskInstructionsV2.html") 
+//        newHtml("instructions form", "TaskInstructionsSpAct.html") 
 
             .print()
         ,
@@ -31,7 +31,7 @@ var items = [
             .wait()
     )]
     ,
- ["prepractice", "PennController", PennController(
+    ["prepractice", "PennController", PennController(
         newHtml("prepractice form", "NaturalnessInstructions.html")
             .print()
         ,
@@ -110,9 +110,9 @@ PennController.FeedItems( myTable.filter("ExptType","Practice"),
                     .settings.size(700, 30)
             )               
             .settings.add(25,130,
-                newText("stimuli", item.InSitu_Stims)
-             //   newText("stimuli", item.V2_Stims)
-             //   newText("stimuli", item.SpActAdv_Stims)
+             //   newText("stimuli", item.InSitu_Stims)
+                newText("stimuli", item.V2_Stims)
+             //  newText("stimuli", item.SpActAdv_Stims)
                     .settings.italic()
                     .settings.size(700, 30)
             )
@@ -133,7 +133,7 @@ PennController.FeedItems( myTable.filter("ExptType","Practice"),
                 getFunction("isIntermed")
                     .test.is(true)
                     .success( getText("instructionsText").settings.text("Det &auml;r f&ouml;rmodligen inte s&aring; l&auml;tt att f&ouml;rest&auml;lla dig n&auml;r man skulle kunna anv&auml;nda den h&auml;r meningen. Folk v&auml;ljer vanligtvis ett betyg n&aring;gonstan i mitten av skalan.") )
-                    .failure( getText("instructionsText").settings.text("Oberoende av situationen skulle du nog inte anv&auml;nda den h&auml;r meningen. Folk v&auml;ljer vanligtvis ett `l&aring; betyg':") )
+                    .failure( getText("instructionsText").settings.text("Oberoende av situationen skulle du nog inte anv&auml;nda den h&auml;r meningen. Folk v&auml;ljer vanligtvis ett `l&aring;gt betyg':") )
             )
         ,            
         getText("instructionsText")
@@ -191,9 +191,9 @@ PennController.FeedItems( myTable.filter("Expt","experiment-first"),
                     .settings.size(700, 30)
             )               
             .settings.add(25,130,
-               newText("stimuli", item.InSitu_Stims)
-             //   newText("stimuli", item.V2_Stims)
-             //   newText("stimuli", item.SpActAdv_Stims)
+             //   newText("stimuli", item.InSitu_Stims)
+                newText("stimuli", item.V2_Stims)
+             //  newText("stimuli", item.SpActAdv_Stims)
                     .settings.italic()
                     .settings.size(700, 30)
             )
@@ -270,9 +270,9 @@ PennController.FeedItems( myTable.filter("Expt","experiment"),
                     .settings.size(700, 30)
             )               
             .settings.add(25,130,
-               newText("stimuli", item.InSitu_Stims)
-             //   newText("stimuli", item.V2_Stims)
-             //   newText("stimuli", item.SpActAdv_Stims)
+             //   newText("stimuli", item.InSitu_Stims)
+                newText("stimuli", item.V2_Stims)
+             //  newText("stimuli", item.SpActAdv_Stims)
                     .settings.italic()
                     .settings.size(700, 30)
             )
@@ -327,8 +327,3 @@ PennController.FeedItems( myTable.filter("Expt","experiment"),
    // .log("SpActAdv_Stims", item.SpActAdv_Stims)           
     .log("source", PennController.GetURLParameter("source")) 
 );
-
-
-
-
-
